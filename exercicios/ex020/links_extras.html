@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > childreen
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        div {
+            background-image: linear-gradient(to left, #042940, #005C53);
+            width: 50%;
+            margin: auto;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            background-image: linear-gradient(to left, #042940, #005C53);
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 10px;
+        }
+
+        ul {
+            display: inline-block;
+            list-style: none;
+            padding-left: 0px;
+            width: 80%;
+        }
+
+        li {
+            background-color: #9FC131;
+            padding: 3px;
+            border-radius: 3px;
+            margin: 10px;
+        }
+        
+        li:hover {
+            background-color: #DBF227;
+        }
+
+        a {
+            color: #D6D58E;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            place-items: center;
+        }
+
+        a:visited {
+            color: #525230;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        .especial::before {
+            content: '⇒';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(105, 98, 98);
+        }
+
+        .especial::after {
+            content: '⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(105, 98, 98);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personalizando Links</h1>
+        <ul>
+            <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório GitHub</a></li>
+            <li><a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">Canal do YouTube</a></li>
+            <li><a href="https://www.cursoemvideo.com" target="_blank" rel="external">Site do Curso em Vídeo</a></li>
+        </ul>
+    </div>
+</body>
+</html>
